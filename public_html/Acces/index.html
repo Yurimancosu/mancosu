@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.101.0">
+        <title>Headers · Bootstrap v5.2</title>
+
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/headers/">
+
+
+        <link rel="stylesheet" type ="text/css" href="../Css/Footer.css">
+        <link rel="stylesheet" type ="text/css" href="../Css/bootstrap.min.css">
+        <script type="text/javascript" src="../Js/bootstrap.min.js"></script>
+        <link href="list-groups.css" rel="stylesheet">
+
+
+
+        <style>
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
+
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
+            }
+
+            .b-example-divider {
+                height: 3rem;
+                background-color: rgba(0, 0, 0, .1);
+                border: solid rgba(0, 0, 0, .15);
+                border-width: 1px 0;
+                box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+            }
+
+            .b-example-vr {
+                flex-shrink: 0;
+                width: 1.5rem;
+                height: 100vh;
+            }
+
+            .bi {
+                vertical-align: -.125em;
+                fill: currentColor;
+            }
+
+            .nav-scroller {
+                position: relative;
+                z-index: 2;
+                height: 2.75rem;
+                overflow-y: hidden;
+            }
+
+            .nav-scroller .nav {
+                display: flex;
+                flex-wrap: nowrap;
+                padding-bottom: 1rem;
+                margin-top: -1px;
+                overflow-x: auto;
+                text-align: center;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+        </style>
+
+
+        <link href="headers.css" rel="stylesheet">
+    </head>
+    <body style="background: lightgray">
+
+        <main>
+            <form >
+                <header class="p-3 text-bg-dark">
+                    <div class="container">
+                        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+                            </a>
+
+                            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                                <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                                <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                                <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                                <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                                <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                            </ul>
+
+                            <div class="text-end">
+                                <a href="login.html" class="btn btn-outline-light me-2">Login</a>
+                                <a href="Sign-up.html" class="btn btn-warning" value="Sign-up" >Sign-up</a>
+                            </div>
+                        </div>
+                    </div>
+            </form>
+        </header>
+
+        <form action="" method="get"  >
+            <div class="list-group ">
+                <div class="form-check-inline">
+                    <div class="form-control" style="background: orange; width: 600px">
+                        <label for="Nome">Nome</label><br>
+                        <input type="text" id="Nome" name="Nome"><br>
+                        <label for="Cognome">Cognome</label><br>
+                        <input type="text" id="Cognome" name="Cognome"><br> 
+                </div>  
+                </div>  
+
+                <div class="form-control" style="background: orange; width: 600px">
+                    <label for="età">Inserisci la tua età</label>
+                    <input type="number" id="età" name="età" min="1" max="90">
+                    <label for="Gender">Scegli il tuo sesso:</label>
+                    <select name="Gender" id="Gender">
+                        <option value="Maschio">Maschio</option>
+                        <option value="Femmina">Femmina</option>
+                        <option value="Altro">Altro</option>
+                    </select>
+                    <label for="From">Indica Da dove vieni :</label>
+                    <select name="From" id="Gender">
+                        <option value="Abruzzo">Abruzzo</option>
+                        <option value="Basilicata">Basilicata</option>
+                        <option value="Calabria">Calbria</option>
+                        <option value="Campania">Campania</option>
+                        <option value="Emilia Romagna">Emilia Romagna</option>
+                        <option value="Friuli">Friuli</option>
+                        <option value="Lazio">Lazio</option>
+                        <option value="Liguria">Liguria</option>
+                        <option value="Lombardia">Lombardia</option>
+                        <option value="Marche">Marche</option>
+                        <option value="Molise">Molise</option>
+                        <option value="Piemonte">Piemonte</option>
+                        <option value="Puglia">Puglia</option>
+                        <option value="Sardegne">Sardegna</option>
+                        <option value="Sicilia">Sicilia</option>
+                        <option value="Toscana">Toscana</option>
+                        <option value="Trentino Alto Adige">Trentino Alto Adige</option>
+                        <option value="Umbria">Umbria</option>
+                        <option value="Valle d'Aosta">Valle d'Aosta</option>
+                        <option value="Veneto">Veneto</option>
+                    </select>
+                </div>
+
+                <div class="form-control" style="background: orange; width: 600px">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="email" name="email" id="email" placeholder="esempio@gmail.com"  />
+                    <div class="form-group">
+                        <label for="Password">Password</label>
+                        <input type="password" class="form-control" id="Password" placeholder="Password">
+                    </div>
+                </div>
+                <p><label for="CasellaTesto">Casella di testo</label></p>
+                <textarea id="CasellaTesto" name="CasellaTesto" rows="4" cols="50"></textarea><br>    
+            </div>
+        </form> 
+
+        <div class="container-fluid">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <p class="col-md-4 mb-0 text-muted">© 2022–2023 Itt Buonarroti.</p>
+
+                <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+                </a>
+
+                <ul class="nav col-md-4 justify-content-end">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                </ul>
+            </footer>
+        </div>
+
+</body>
+
+</div>
+</html>

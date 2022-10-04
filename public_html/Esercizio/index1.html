@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.101.0">
+        <title>List groups · Bootstrap v5.2</title>
+
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/list-groups/">
+
+
+        <link rel="stylesheet" type ="text/css" href="../Css/bootstrap.min.css">
+        <script type="text/javascript" src="../Js/bootstrap.min.js"></script>
+        <style>
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
+
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
+            }
+
+            .b-example-divider {
+                height: 3rem;
+                background-color: rgba(0, 0, 0, .1);
+                border: solid rgba(0, 0, 0, .15);
+                border-width: 1px 0;
+                box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+            }
+
+            .b-example-vr {
+                flex-shrink: 0;
+                width: 1.5rem;
+                height: 100vh;
+            }
+
+            .bi {
+                vertical-align: -.125em;
+                fill: currentColor;
+            }
+
+            .nav-scroller {
+                position: relative;
+                z-index: 2;
+                height: 2.75rem;
+                overflow-y: hidden;
+            }
+
+            .nav-scroller .nav {
+                display: flex;
+                flex-wrap: nowrap;
+                padding-bottom: 1rem;
+                margin-top: -1px;
+                overflow-x: auto;
+                text-align: center;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+        </style>
+
+
+        <!-- Custom styles for this template -->
+        <link href="list-groups.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <form action="">
+            <div class="list-group" w-auto>
+
+                <div class="form-group">
+
+                    <label for="exampleInputEmail1">Email </label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">Non condividere con nessuno la tua Email</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Invia</button>
+            </div>
+
+            <div class="b-example-divider"></div>
+
+            <form action="">
+                <div class="list-group" w-auto>
+
+                    <div class="form-group">
+                        <input type="radio" id="html" name="fav_language" value="HTML">
+                          <label for="html">HTML</label><br>
+                    </div>  
+
+                    <div class="form-group">
+                          <input type="radio" id="css" name="fav_language" value="CSS">
+                          <label for="css">CSS</label><br>
+                    </div>
+
+                    <div class="form-group">
+                          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                          <label for="javascript">JavaScript</label>
+                    </div>
+                </div>
+                </div>
+
+                <div class="list-group list-group-checkable d-grid gap-2 border-0 w-auto">
+                    <div class="list-group" w-auto>
+                        <div class="form-group">
+                            <label for="gname">Nome</label><br>
+                            <input type="text" id="gname" name="gname"><br>
+                            <label for="mname">Cognome</label><br>
+                            <input type="text" id="mname" name="mname" >
+
+
+                            <p><label for="w3review">Casella di testo</label></p>
+                            <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+                            <button type="button" onclick="alert('Inserito')">Inserisci</button>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-group list-group-checkable d-grid gap-2 border-0 w-auto">
+                    <form action="/action_page.php">
+                        <label for="gender">Scegli il genere</label>
+                        <select name="cars" id="cars">
+                            <option value="maschio">Maschio</option>
+                            <option value="femmina">Femmina</option>
+                            <option value="other">Non binario</option>
+                        </select>
+                        <br><br>
+                        <input type="submit" value="Submit">
+                        </div>
+
+                        <div class="b-example-divider"></div>
+
+                        <div class="d-flex gap-5 justify-content-center">
+                            <div class="list-group mx-0 w-auto">
+                                <label class="list-group-item d-flex gap-2">
+                                    <input class="form-check-input flex-shrink-0" type="checkbox" value="" checked>
+                                    <span>
+                                        Primo checkbox
+                                        <small class="d-block text-muted"></small>
+                                    </span>
+                                </label>
+                                <label class="list-group-item d-flex gap-2">
+                                    <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                                    <span>
+                                        Secondo checkbox
+                                        <small class="d-block text-muted"></small>
+                                    </span>
+                                </label>
+                                <label class="list-group-item d-flex gap-2">
+                                    <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                                    <span>
+                                        Terzo checkbox
+                                        <small class="d-block text-muted"></small>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="b-example-divider"></div>
+
+</body>
+ </html>
